@@ -1,0 +1,19 @@
+
+server:
+  tomcat:
+    accesslog:
+      enabled: true
+  port: 9003
+
+spring:
+  datasource:
+    url: jdbc:mysql://127.0.0.1:3306/prueba_nequi?useUnicode=true&useJDBCCompliantTimezoneShift=true&serverTimezone=UTC
+    username: danielao
+    password: pruebanequi.
+    driver-class-name: com.mysql.cj.jdbc.Driver
+  jpa:
+    hibernate:
+      ddl-auto: update
+  jackson:
+    time-zone: America/Bogota
+    locale: es-Co
